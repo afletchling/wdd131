@@ -3,11 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD131</title>
-    <meta name="description" content="Base description for the starter page.">
+    <title>WDD 131 - Dynamic Web Fundamentals - Aiden</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals, Aiden Fletcher, Basic welcome homepage.">
     <meta name="author" content="Aiden Fletcher">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <h1>WDD131 - Aiden</h1>
+    <header>
+        <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
+        <nav>
+            <ul>
+                <li><a href="https://linkedin.com">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/morm/3?lang=eng&id=p6#p6">Scripture</a></li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Aiden Fletcher</h1>
+        <section class="card">
+            <h2>About Me</h2>
+            <p>
+                Hello! My name's Aiden, and I'm a developer geared towards writing wacky projects.
+                One of my favorite passtimes to partake in is going on walks outside.
+                My main focus nowadays is creating whatever ideas pop up to me :)
+            </p>
+            <img src="images/profile.png" alt="Profile Picture">
+            <h3>Canada</h3>
+            <div id="country-holder">
+                <figure>
+                    <img src="images/canada-flag.png" alt="Flag of Canada">
+                    <figcaption>Official flag of Canada</figcaption>
+                </figure>
+                <p>
+                    Canada is a country bordering the United States, mostly known for representing the Maple Leaf and
+                    inhabiting
+                    Moose in the beautiful mountain landscapes.
+                </p>
+            </div>
+        </section>
+        <section class="card">
+            <h2>Personal Links</h2>
+            <ul>
+                <li><a href="https://linkedin.com">LinkedIn</a></li>
+                <li><a href="https://github.com/afletchling">Github</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> &#10059; Aiden Fletcher &#10059; Alberta, Canada</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
