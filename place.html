@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canada Statistics</title>
+    <meta name="description" content="A statistics and weather page for Canada.">
+    <meta name="author" content="Aiden Fletcher">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Canada</h1>
+    </header>
+    <main>
+        <picture>
+            <source srcset="images/canada-large.jpg" media="(min-width: 900px)">
+            <img id="background" src="images/canada-small.jpg" alt="A photo of the Canada Mountains">
+        </picture>
+        <section id="data">
+            <div class="section-header">
+                <h2>Data</h2>
+            </div>
+            <table>
+                <tbody>
+                </tbody>
+            </table>
+        </section>
+        <section id="weather">
+            <div class="section-header">
+                <h2>Weather</h2>
+                <img src="images/sun-and-clouds.svg" alt="Sun and clouds">
+            </div>
+            <table>
+                <tbody>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> &#10059; Aiden Fletcher &#10059; Alberta, Canada</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

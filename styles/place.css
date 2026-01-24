@@ -1,0 +1,107 @@
+:root {
+    --primary-color: #4c368b;
+    --main-font: Arial, Helvetica, sans-serif;
+    --header-font: "Montserrat", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--header-font);
+}
+
+h1 {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+img:last-child {
+    width: 5rem;
+}
+
+table {
+    width: 100%;
+    background-color: rgb(255 255 255 / 0.6);
+}
+
+td {
+    padding: 0.5rem;
+    text-align: center;
+}
+
+td:first-child {
+    text-align: right;
+    font-weight: bolder;
+}
+
+td:first-child::after {
+    content: ":";
+}
+
+td:last-child {
+    text-align: left;
+}
+
+section {
+    margin: 1rem;
+}
+
+section p {
+    background-color: rgb(255 255 255 / 0.6);
+    padding: 1rem;
+    font-family: var(--header-font);
+    text-align: center;
+    line-height: 3cap;
+}
+
+picture {
+    grid-column: 1 / 4;
+    grid-row: 1 / 1;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+}
+
+/* Class Selector */
+
+.bold {
+    font-weight: bold;
+}
+
+.section-header {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* ID Selectors */
+
+#data {
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+    border-bottom: solid 2px rgb(0 0 0 / 0.1);
+}
+
+#weather {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    align-self: end;
+}
+
+#background {
+    width: 100%;
+    height: auto;
+}
+
+#lastModified {
+    color: yellow;
+}

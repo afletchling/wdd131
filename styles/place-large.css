@@ -1,0 +1,27 @@
+@media (min-width: 900px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    section {
+        margin: 2rem 1rem;
+    }
+
+    img:last-child {
+        margin-left: auto;
+        width: 2rem;
+        height: auto;
+    }
+
+    /* Class Selector */
+
+    .section-header {
+        display: flex;
+        padding: 1rem;
+        text-align: left;
+        background-color: var(--primary-color);
+        color: white;
+        font-size: 1rem;
+    }
+}
