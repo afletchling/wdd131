@@ -1,4 +1,4 @@
-@media (min-width: 900px) {
+@media (min-width: 1000px) {
     main {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -8,9 +8,12 @@
         margin: 2rem 1rem;
     }
 
-    img:last-child {
+    picture:last-child {
         margin-left: auto;
-        width: 2rem;
+    }
+
+    img:last-child {
+        width: 1.75rem;
         height: auto;
     }
 

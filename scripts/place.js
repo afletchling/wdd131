@@ -17,8 +17,7 @@ function addTableData(selector, key, value) {
 }
 
 function calculateWindChill(temperature, windSpeed) {
-    const windChill = 13.12 + 0.6215 * temperature - 11.37 * (windSpeed ** 0.16) + 0.3965 * temperature * (windSpeed ** 0.16);
-    return `${Math.round(windChill * 10) / 10}C`;
+    return `${Math.round((13.12 + 0.6215 * temperature - 11.37 * (windSpeed ** 0.16) + 0.3965 * temperature * (windSpeed ** 0.16)) * 10) / 10}C`;
 }
 
 const temperature = -19;
