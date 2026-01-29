@@ -25,14 +25,12 @@
 
     /* ID Selector */
 
-    #weather {
-        img {
-            display: none;
-        }
+    #weather img {
+        display: none;
+    }
 
-        .section-header::after {
-            content: "🌥️";
-            font-size: 1.3rem;
-        }
+    #weather .section-header::after {
+        content: "🌥️";
+        font-size: 1.3rem;
     }
 }
