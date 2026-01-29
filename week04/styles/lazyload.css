@@ -1,0 +1,54 @@
+:root {
+    --primary-color: #4c368b;
+    --main-font: Arial, Helvetica, sans-serif;
+    --header-font: "Montserrat", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--header-font);
+}
+
+h1 {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    font-family: var(--header-font);
+    padding: 1rem;
+    grid-column: 1 / 4;
+}
+
+img {
+    display: block;
+    margin: 1rem auto;
+    animation: image-fade 1s;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    font-family: var(--header-font);
+}
+
+@keyframes image-fade {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+/* ID Selectors */
+
+#lastModified {
+    color: yellow;
+}
