@@ -47,14 +47,14 @@ td:last-child {
 
 section {
     margin: 1rem;
-}
 
-section p {
-    background-color: rgb(255 255 255 / 0.6);
-    padding: 1rem;
-    font-family: var(--header-font);
-    text-align: center;
-    line-height: 3cap;
+    p {
+        background-color: rgb(255 255 255 / 0.6);
+        padding: 1rem;
+        font-family: var(--header-font);
+        text-align: center;
+        line-height: 3cap;
+    }
 }
 
 picture {
