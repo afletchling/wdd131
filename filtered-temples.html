@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtered Temple Album</title>
+    <meta name="description" content="A page showing off the various temples in a mobile friendly format alongside filtering.">
+    <meta name="author" content="Aiden Fletcher">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="scripts/filtered-temples.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <span id="header-title">
+            Temple Album
+        </span>
+        <button id="menu" title="Navigation Menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a id="home-nav" href="#">Home</a></li>
+                <li><a id="old-nav" href="#">Old</a></li>
+                <li><a id="new-nav" href="#">New</a></li>
+                <li><a id="large-nav" href="#">Large</a></li>
+                <li><a id="small-nav" href="#">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Main</h1>
+        <section id="temples">
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> &#10059; Aiden Fletcher &#10059; Alberta, Canada</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
