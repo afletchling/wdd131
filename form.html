@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Fourm</title>
+    <meta name="description" content="Webpage for rating products and writing reviews.">
+    <meta name="author" content="Aiden Fletcher">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html">
+            <label for="product">Product Name</label>
+            <select name="product" id="product" required>
+                <option value="" selected disabled>Select a Product ...</option>
+            </select>
+            <p>Overall Rating</p>
+            <div id="star">
+                <label class="star" for="one">&star;</label>
+                <label class="star" for="two">&star;&star;</label>
+                <label class="star" for="three">&star;&star;&star;</label>
+                <label class="star" for="four">&star;&star;&star;&star;</label>
+                <label class="star" for="five">&star;&star;&star;&star;&star;</label>
+                <input type="radio" name="star" id="one" value="one" required>
+                <input type="radio" name="star" id="two" value="two" required>
+                <input type="radio" name="star" id="three" value="three" required>
+                <input type="radio" name="star" id="four" value="four" required>
+                <input type="radio" name="star" id="five" value="five" required>
+            </div>
+            <label for="date">Date of Installation</label>
+            <input type="date" name="date" id="date" required>
+            <p>
+                Which features did you find useful in the product? <br>
+                <span class="italic">(Check all that apply)</span>
+            </p>
+            <div id="features">
+                <input type="checkbox" name="feature1" id="feature1" value="durability">
+                <label for="feature1">Durability</label>
+                <input type="checkbox" name="feature2" id="feature2" value="easeofuse">
+                <label for="feature2">Ease of Use</label>
+                <input type="checkbox" name="feature3" id="feature3" value="performance">
+                <label for="feature3">Performance</label>
+                <input type="checkbox" name="feature4" id="feature4" value="design">
+                <label for="feature4">Design</label>
+            </div>
+            <label for="review">Written Review <span class="optional">(Optional)</span></label>
+            <textarea name="review" id="review"></textarea>
+            <label for="name">Your Name <span class="optional">(Optional)</span></label>
+            <input type="text" name="name" id="name">
+            <input type="submit">
+        </form>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> &#10059; Aiden Fletcher &#10059; Alberta, Canada</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

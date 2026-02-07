@@ -1,0 +1,97 @@
+:root {
+    --primary-color: #4c368b;
+    --main-font: Arial, Helvetica, sans-serif;
+    --header-font: "Montserrat", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--header-font);
+}
+
+h1 {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    padding: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem auto;
+    max-width: 800px;
+    padding: 0.5rem 1rem;
+    background-color: #eee;
+    border: 1px solid #ddd;
+}
+
+label, p {
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+
+select, input {
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+
+textarea {
+    height: 10rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+}
+
+/* Class Selectors */
+
+.star {
+    text-align: center;
+    font-size: larger;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.optional {
+    color: var(--primary-color);
+    font-size: smaller;
+}
+
+/* ID Selectors */
+
+#lastModified {
+    color: yellow;
+}
+
+#star {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 0.5fr;
+    justify-content: space-around;
+}
+
+#features {
+    display: grid;
+    grid-template-columns: 1.5rem 1fr;
+    column-gap: 10px;
+}
+
+#name {
+    margin-bottom: 1rem;
+}

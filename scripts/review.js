@@ -1,0 +1,1 @@
+localStorage.setItem('reviews', (Number.parseInt(localStorage.getItem('reviews')) || 0) + 1);
