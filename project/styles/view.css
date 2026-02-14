@@ -1,0 +1,21 @@
+h1 {
+    color: white;
+}
+
+/* ID Selectors */
+
+#attempt-list {
+    margin: 0rem auto;
+    background-color: var(--background-color);
+    padding: 1rem;
+    list-style: none;
+}
+
+#attempt-list li {
+    color: white;
+    font-size: larger;
+    background-color: var(--primary-color);
+    margin: 0.5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}

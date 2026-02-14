@@ -1,0 +1,64 @@
+h1, h2 {
+    color: white;
+    margin: 1rem;
+}
+
+label {
+    color: white;
+    padding: 0.2rem;
+}
+
+input {
+    padding: 0.2rem;
+}
+
+main button {
+    padding: 0.2rem;
+    margin: 0 0.2rem;
+}
+
+/* Class Selectors */
+
+.question {
+    color: white;
+    font-size: larger;
+    display: block;
+    background-color: var(--primary-color);
+    padding: 1rem;
+    margin: 0.5rem;
+    text-decoration: none;
+    border-radius: 1rem;
+}
+
+.question.correct {
+    background-color: #00aa00;
+    color: black;
+}
+
+.question.incorrect {
+    background-color: #aa0000;
+    color: white;
+}
+
+/* ID Selectors */
+
+#quiz-list {
+    max-width: 60vh;
+    margin: 1rem auto;
+    background-color: #ccc;
+    border: 1px solid #bbb;
+    padding: 1rem;
+    list-style: none;
+}
+
+#quiz-list li {
+    margin: 0.5rem;
+}
+
+#questions {
+    max-width: 60vh;
+    margin: 1rem auto;
+    justify-content: center;
+    text-align: center;
+    list-style: none;
+}
